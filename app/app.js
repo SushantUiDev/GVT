@@ -1,5 +1,5 @@
 (function () {
-    angular.module("myApp", ["ngRoute", "header", "footer", "products", "slider", "digital", "strategy"]);
+    angular.module("myApp", ["ngRoute","common","header", "footer", "products", "slider", "digital", "strategy"]);
 
     angular.module("myApp")
         .config(function ($routeProvider) {
