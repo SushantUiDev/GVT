@@ -1,0 +1,5 @@
+Q1.What is docktypein html ?
+Q2.how many ways we can add css in page ?
+Q3.how to center any tag center irrespective of width.
+Q4.how to read data from table ?
+Q5.how to add multiple object in array.

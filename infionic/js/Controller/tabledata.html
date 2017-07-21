@@ -1,0 +1,60 @@
+<html>
+
+<head>
+	<title>index</title>
+</head>
+
+<body>
+	<table id="myTable">
+		<tr>
+			<td>Sid</td>
+			<td>Sname</td>
+			<td>Lname</td>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>Sushant</td>
+			<td>Paikrao</td>
+		</tr>
+	</table>
+	<div id="div1">
+	</div>
+	<script>
+		//gets table
+		var oTable = document.getElementById('myTable');
+		console.log(oTable);
+
+		//gets rows of table
+		var rowLength = oTable.rows.length;
+		console.log(rowLength);
+
+		//loops through rows    
+		for (i = 0; i < rowLength; i++) {
+
+			//gets cells of current row  
+			var oCells = oTable.rows.item(i).cells;
+			console.log(oCells);
+
+			//gets amount of cells of current row
+			var cellLength = oCells.length;
+			console.log(cellLength);
+
+			//loops through each cell in current row
+			for (var j = 0; j < cellLength; j++) {
+
+				// get your cell info here
+
+				var cellVal = oCells.item(j).innerHTML;
+				//alert(cellVal);
+				var divObj=document.getElementById("div1");
+				divObj.innerHTML=cellVal;
+				
+			}
+			
+		}
+	</script>
+
+</body>
+
+
+</html>

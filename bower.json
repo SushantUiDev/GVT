@@ -16,6 +16,7 @@
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
     "angular": "^1.6.5",
-    "bootswatch-dist": "cerulean"
+    "bootswatch-dist": "cerulean",
+    "angular-route": "^1.6.5"
   }
 }

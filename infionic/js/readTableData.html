@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>index</title>
+		<script>
+			function display(){
+				//get the reference of table
+				var tabObj=document.getElementById("table1");
+				console.log(tabObj);
+				//get the reference of div
+				var divObj=document.getElementById("div1");
+				console.log(divObj);
+				divObj.innerHTML=tabObj;
+			}
+		</script>
+	</head>
+	<body>
+		<table id="table1"  border="2px solid gray">
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Display</th>
+			</tr>
+			<tr>
+				<td>Sushant</td>
+				<td>Paikrao</td>
+				<td><button type="button" name="btn1" id="btn1" onclick="display()">Display</button></td>
+			</tr>
+			
+		</table>
+		<div id="div1">
+		</div>
+	</body>
+	
+</html>

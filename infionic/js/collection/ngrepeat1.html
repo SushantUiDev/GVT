@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>index</title>
+		<script src="scripts/angular.js"></script>
+		<style>
+			img{
+				width: 250px;
+				height: 250px;
+				border: 2px solid green;
+				
+			}
+		</style>
+	</head>
+	<body ng-app="" ng-init="images=['audi1.png','audi2.png','BMW.png','batman1.png','batman2.png','batman3.png','batman4.png']" >
+		
+		<img ng-repeat="item in images" src="img/{{item}}">
+		
+	</body>
+</html>

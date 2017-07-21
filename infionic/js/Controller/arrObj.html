@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>index</title>
+		<script src="scripts/angular.js"></script>
+		<script>
+			var obj=angular.module("myApp",[]);
+			
+			obj.controller("myCtrl",function($scope){
+				$scope.students=[
+					{"fName":"Sushant","age":"25"},
+					{"fName":"vicky","age":"26"},
+					{"fName":"akash","age":"24"},
+					{"fName":"Rana","age":"30"},
+					{"fName":"Sushant","age":"25"}
+				]
+				$scope.showData=function(){
+					
+				}
+				
+			})
+		</script>
+	</head>
+	<body ng-app="myApp">
+		<h2>Accessing array object </h2>
+		<hr>
+		<table ng-controller="myCtrl" border="2px solid green">
+			<tr>
+				<th>Sr No</th>
+				<th>Student Name</th>
+				<th>Age</th>
+				<th>Button</th>
+			</tr>
+			<tr ng-repeat="item in students">
+				<td>{{$index+1}}</td>
+				<td>{{item.fName}}</td>
+				<td>{{item.age}}</td>
+				<td><button type="button" name="btn1" value="btn_submit" id="btn1" ng-click="showData()">Show</button></td>
+			</tr>
+		</table>
+		
+	</body>
+</html>

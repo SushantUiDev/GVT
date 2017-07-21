@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>index</title>
+		<script src="scripts/angular.js"></script>
+	</head>
+	<body ng-app="" ng-init="obj={empNo:20158,
+							 empName:'sushnat',
+							 salary:25000,
+							 job:'soft engg',
+							 loc:'hyd'}">
+		<hr>
+		<h2>list format</h2>
+		<ul>
+			<li>{{obj.empNo}}</li>
+			<li>{{obj.empName}}</li>
+			<li>{{obj.salary}}</li>
+			<li>{{obj.job}}</li>
+			<li>{{obj.loc}}</li>
+		</ul>
+		<hr>
+		<h2>in table format</h2>
+		<table border="2px solid green">
+			<tr>
+				<th>Emp No</th>
+				<th>Emp Name</th>
+				<th>Salary</th>
+				<th>Job</th>
+				<th>Loc</th>
+			</tr>
+			<tr>
+				<td>{{obj.empNo}}</td>
+				<td>{{obj.empName}}</td>
+				<td>{{obj.salary}}</td>
+				<td>{{obj.job}}</td>
+				<td>{{obj.loc}}</td>
+			</tr>
+		</table>
+	</body>
+</html>

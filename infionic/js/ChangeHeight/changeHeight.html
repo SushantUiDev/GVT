@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>Index</title>
+		<script src="scripts/angular.js"></script>
+	</head>
+	<body ng-app="" ng-init="w=450;h=450"> 
+		
+			<img src="img/audi1.png" width="{{w}}" height="{{h}}">
+		<p>
+			<label for="text">Enter Width</label>
+			<input type="text" name="txt1" id="txt1" ng-model="h">
+			height:<input type="range" name="txt1" id="txt1" ng-model="h" max="1000">
+			width:<input type="range" name="txt1" id="txt1" ng-model="w" max="1000">
+		</p>
+		<button type="button" name="btn1" value="Apply">ApplyWidth</button>
+	</body>
+</html>

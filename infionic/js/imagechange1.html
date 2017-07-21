@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>index</title>
+		<style>
+			.{
+				margin: 0px;
+				padding: 0px;
+			}
+			p{
+				text-align: center;
+			}
+			img{
+				width: 100%;
+				height: auto;
+			}
+			div{
+				width: 100%;
+				height: 200px;
+				background-color: green;
+			}
+		</style>
+		<script>
+			function changeImage(){
+				//get the reference of main image;
+				var mainImage=document.getElementById("main_Image");
+				console.log(mainImage);
+				//get the reference of select box
+				var selectedImage=document.getElementById("images");
+				console.log(selectedImage);
+				mainImage.src="img/" + selectedImage.value ;
+			}
+		</script>
+	</head>
+	<body>
+		<p>
+			<label for="selectIImage">Select Image</label>
+			<select id="images"onChange="changeImage()">
+				<option value="-1">Select Image</option>
+				<option value="audi1.png">audi1</option>
+				<option value="audi2.png">audi2</option>
+				<option value="innova.png">Innova</option>
+				<option value="mercedespng.png">Mercedespng</option>
+				<option value="volkswagen.png">Volkswagen</option>
+			</select>
+		</p>
+		<hr>
+		<p>
+			<img id="main_Image" src="img/batman2.png">
+		</p>
+		<div>
+		</div>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>products</title>
+		<script src="scripts/angular.js"></script>
+		<script>
+			var obj=angular.module("myProduct",[]);
+			
+			obj.controller("productCtrl",function($scope){
+				$scope.products=[
+					{"productId":"0056","productName":"Samsung","price":"25000"},
+					{"productId":"0057","productName":"Samsung1","price":"24000"},
+					{"productId":"0058","productName":"Samsung2","price":"23000"},
+					{"productId":"0059","productName":"Samsung3","price":"22000"},
+					{"productId":"0060","productName":"Samsung4","price":"21000"},
+					{"productId":"0061","productName":"Samsung5","price":"20000"}
+				]
+			})
+		</script>
+		<style>
+			th,tr,td{
+				text-align: center;
+			}
+			
+		</style>
+	</head>
+	<body ng-app="myProduct">
+		<table ng-controller="productCtrl" border="2px solid red">
+			<tr>
+				<th colspan="4">products details</th>
+			</tr>
+			<tr>
+				<th>Sr No</th>
+				<th>Product ID</th>
+				<th>Product Name</th>
+				<th>Product Price</th>
+			</tr>
+			<tr ng-repeat="product in products">
+				<td>{{$index+1}}</td>
+				<td>{{product.productId | limitTo : "3"}}</td>
+				<td>{{product.productName | uppercase | limitTo: "2"}}</td>
+				<td>{{product.price | currency:"rs"}}</td>
+			</tr>
+		</table>
+		
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>index</title>
+		<script src="scripts/angular.js"></script>
+		<script>
+			var obj=angular.module("myApp",[]);
+			
+			obj.controller("myCtrl",function($scope){
+				$scope.uname="Sushant";
+				
+			})
+		</script>
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller="myCtrl">
+			<p>Welcome to {{uname}}</p>
+		</div>
+	</body>
+</html>

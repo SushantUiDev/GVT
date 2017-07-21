@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<title>change Image</title>
+	<style>
+		img {
+			width: 400px;
+			height: auto;
+		}
+		
+		p {
+			text-align: center;
+			font-family: monospace;
+			font-size: 28px;
+		}
+		
+		#selectImage {
+			padding: 20px;
+			font-size: 28px;
+			background-color: aliceblue;
+		}
+	</style>
+	<script src="scripts/angular.js"></script>
+	<script>
+	</script>
+</head>
+
+<body ng-app="" ng-init="x='img/audi1.png'">
+	<div>
+		<p>
+			<label for="selectImage">Select Image</label>
+			<select id="selectImage" ng-model="x" >
+				<option value="Select Image">Select Image</option>
+				<option value="img/audi2.png">audi2</option>
+				<option value="img/BMW.png">BMW</option>
+				<option value="img/toyota.jpg">Toyota</option>
+			</select>
+		</p>
+		<hr>
+		<p>
+			<img src="{{x}}" >
+		</p>
+	</div>
+</body>
+
+</html>
