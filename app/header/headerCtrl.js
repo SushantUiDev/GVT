@@ -3,6 +3,7 @@
         var vm=this;
         vm.brandName="JVT Online";
         vm.navbar=["footer","strategy","digital","products","slider"];
+        vm.dropnav=["profile","edit","logout"];
         
     }
     angular.module("header")

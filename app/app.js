@@ -28,5 +28,4 @@
                     redirectTo: "/slider"
                 })
         });
-
 })();
